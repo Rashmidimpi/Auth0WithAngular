@@ -1,0 +1,20 @@
+<div class="flex ml-4 md:ml-10 mt-10 flex-col md:flex-row overflow-y-hidden">
+  <div class=" overflow-hidden mr-5" cover>
+    <img [src]="user.picture" class="rounded-full w-36" cover>
+  </div>
+  <div class="w-full">
+    <div class="flex flex-col px-1 gap-1">
+      <div class="mt-5 text-4xl md:text-6xl main-font font-semibold ml-[-5px]">
+        {{user. name}}
+      </div>
+      <div class="mt-5 font-normal secondary-font text-lg">
+        {{user.email}}
+      </div>
+     <div>
+      <button mat-raised-button color="primary" class="w-[20%] h-60 text-base mt-5" (click)="auth.logout({ logoutParams: { returnTo: document.location.origin } })">Logout</button>
+     </div>
+    </div>
+  </div>
+</div>
+
+ 
